@@ -1,0 +1,35 @@
+OrderID = 10 olan Users ın Sipariş tarihine 5 gün ekle
+update Orders
+set OrderDate = DATEADD(day ,5 ,OrderDate)
+where OrderID = 10
+
+
+En çok siparişi veren kullanıcı 
+select TOP 1
+    U.NameSurname,
+    COUNT(O.OrderID) AS OrderCount
+from Orders O
+join Users u ON O.UserID = O.UserID
+GROUP BY U.NameSurname
+ORDER BY OrderCount DESC;
+
+
+Bir kişi bir üründen ne kadar ve kaç tane aldı 
+select 
+    U.NameSurname,
+    P.ProductName,
+    O.Quantity,
+    O.Quantity * P.Price AS TotalAmount
+from Orders O
+join Users U ON O.UserID = U.UserID
+join Products P ON O.ProductID = P.ProductID;
+
+
+Belli bir kategoriye ait ürünleri listeler
+select
+    P.ProductName,
+    P.StockQuantity,
+    P.Price
+from Products P
+join Categories C ON P.CategoryID = C.CategoryID
+where C.CategoryName = 'Kişisel Bakım';
