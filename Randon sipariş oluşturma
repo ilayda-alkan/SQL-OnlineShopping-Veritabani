@@ -1,0 +1,23 @@
+
+----Oluşturulan ve içine eklenilen gerçek verileri kullanarak  100.000  rastgele  sipariş oluşturulmuştur
+declare @counter int
+declare @userID int 
+set @counter = 0
+
+while @counter <100000
+begin
+set @userID = ( case when @counter % 4 = 0 then 1
+					 when @counter % 4 = 1 then 2
+					 when @counter % 4 = 2 then 3
+					 when @counter % 4 = 3 then 4
+					 end)
+insert into Orders (OrderID,UserID,ProductID,OrderDate,Quantity)
+values(
+CAST(ROUND(RAND() * 10000,0) AS INT),
+@userID,
+(select TOP 1 ProductID from Products order by NEWID()),
+DATEADD(DAY,FLOOR(rand()*365),'2023-01-01'),
+FLOOR(RAND()*10)+1
+);
+	set @counter = @counter + 1
+end
