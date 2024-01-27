@@ -1,0 +1,85 @@
+---PRODUCTS TABLE---
+1	Televizyon	50,00	20000	1
+2	Telefon	100,00	35000	5
+3	Tablet	120,00	20000	1
+4	Masaüstü bilgisayar	72,00	23000	1
+5	Buzdolabı	154,00	48000	2
+6	Çamaşır Makinesi	30,00	50000	2
+7	Tıraş Makinesi	256,00	2000	4
+8	Bulaşık Makinesi	36,00	47000	2
+9	Kulaklık	123,00	3000	6
+10	Fırın	140,00	36000	7
+11	Fotoğraf Makinesi	26,00	18000	1
+12	Ankastre	14,00	29000	7
+13	Akıllı saat	48,00	16000	6
+14	Süpürge	54,00	20000	3
+15	Vantilatör	6,00	5000	2
+16	Klima	16,00	16000	2
+17	Ütü	47,00	10000	3
+18	Kahve Makinesi	56,00	14000	7
+19	Tost Makinesi	12,00	17000	7
+20	Mikser	45,00	16000	7
+21	Saç Maşası	36,00	1000	4
+22	Şarjlı Diş Fırçası 	14,00	1500	4
+23	Yüz Temizleme Cihazı	25,00	1560	4
+24	Manikür Seti	58,00	1759	4
+25	Telsiz Telefon	68,00	1369	3
+26	Tansiyon Aleti	58,00	1478	4
+27	Hoparlör	25,00	2589	1
+28	Yazıcı	14,00	3646	1
+29	Monitör	36,00	2456	1
+30	Güvenlik Kamerası	85,00	3654	3
+31	Pikap	74,00	2356	6
+32	MP3/MP4	36,00	1567	6
+33	Dondurucu	41,00	3658	2
+34	Çamaşır kurutma makinesi	25,00	1425	2
+35	Saç Düzleştiricisi	36,00	3625	4
+36	Saç kurutma makinesi	58,00	4758	4
+37	Blendar	101,00	4769	7
+38	Fritöz	502,00	2547	7
+39	Airfry	54,00	3658	7
+40	Ocak seti	25,00	20000	7
+41	Epilasyon Aleti	40,00	4152	4
+42	Tost Makinesi	65,00	3500	7
+43	Kettle	12,00	8500	7
+44	Su arıtma Cihazı	18,00	6870	7
+45	Dikiş Makinesi	54,00	3654	3
+46	Şofben	18,00	6478	2
+47	Ütü Masası	32,00	5632	3
+48	Buharlı Temizleyi	25,00	9254	3
+49	Sulu Süpürge	11,00	9685	3
+50	Çay Makinesi	25,00	8541	7
+
+---CATEGORİES TABLE---
+1	Bilgisayar/Tablet
+2	Beyaz Eşya
+3	Elektrikli Ev Aletleri
+4	Kişisel Bakım
+5	Televizyon
+6	Giyilebili Teknoloji
+7	Mutfak Teknolojik Aletleri
+
+---USERS TABLE---
+1	Ahmet Aslan	info@aslan.com	Ankara	5684599875
+2	Beren Tezcan	info@tezcan.com	Aksaray	5698741236
+3	Şerife Erçin 	info@erçin.com	Manisa	5694875963
+4	Beyza Üneşi	info@üneşi.com	Yalova	5423698756
+5	Sıla Karaman	info@karaman.com	Bursa	5489632165
+6	Deniz Bayın 	info@bayın.com	İzmir	5489632548
+7	Mehmet Yılmaz	info@yılmaz.com	İstanbul	5489632564
+8	Emir Günday	info@günday.com	Ankara	5632698455
+9	Beyza Önal	info@önal.com	Ankara	5326897456
+10	Emre Yıldız	info@yıldız.com	Edirne	5639632589
+11	Ceyda Cınbırt	info@cınbırt.com	Ordu	5639874563
+12	Kübra Sarı 	info@sarı.com	Manisa	5698963268
+13	Aleyna Yıldız	info@yıldız.com	Erzurum	5698945633
+14	Mert Uzun 	info@uzun.com	İstanbul	5698963265
+15	Osman Bektaş	info@bektaş.com	Aydın	5698965478
+16	Kayra Özmen	info@özmen.com	Kırklareli	5489872356
+17	Toprak Kaya 	info@kaya.com	İstanbul	5471236547
+18	Yusuf Alkan	info@alkan.com	Tekirdağ	5469872365
+19	Ayşe Nallı	info@nallı.com	Eskişehir	5412148945
+20	İbrahim Kahya	info@kahya.com	Ankara	5698742356
+21	Özge Paşalı	info@pasalı.com	İstabul	5632145896
+
+
