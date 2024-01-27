@@ -1,0 +1,46 @@
+create procedure InsertUsers
+@NameSurname int,
+@Email nvarchar(50),
+@Addreess nvarchar(50),
+@PhoneNumber nvarchar(50)
+as
+begin 
+insert into Users(NameSurname,Email,Addreess,PhoneNumber)
+values(@NameSurname,@Email,@Addreess,@PhoneNumber)
+end
+
+create procedure UpdateUsersInfo
+@NameSurname nvarchar(50),
+@Email nvarchar(50),
+@Addreess nvarchar(50),
+@PhoneNumber nvarchar(50)
+as
+begin 
+update Users
+set Email = @Email, Addreess = @Addreess, PhoneNumber = @PhoneNumber
+where NameSurname = @NameSurname
+end
+
+create procedure AddCategories
+@CategoryID int,
+@CategoryName nvarchar(50)
+as
+begin
+insert into Categories ( CategoryID,CategoryName)
+values(@CategoryID,@CategoryName)
+end
+
+create procedure InsertProducts
+@ProductID int,
+@ProductName nvarchar(50),
+@StockQuantity int,
+@Price int,
+@CategoryID int
+as
+begin
+insert into Products(ProductID,ProductName,StockQuantity,Price,CategoryID)
+values(@ProductID,@ProductName,@StockQuantity,@Price,@CategoryID)
+end
+
+exec  InsertProducts
+@ProductID = 52 , @ProductName = 'MackBook' , @StockQuantity = 68 , @Price = 18000, @CategoryID = 2  
