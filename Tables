@@ -1,0 +1,34 @@
+create database OnlineShopping 
+use OnlineShopping
+
+create table Users(
+UserID int primary key identity,
+UserName nvarchar(100),
+Email nvarchar(100),
+Addreess nvarchar(100),
+PhoneNumber nvarchar(100)
+)
+
+create table Categories(
+CategoryID int primary key,
+CategoryName nvarchar(100)
+)
+
+create table Products(
+ProductID int primary key,
+ProductName nvarchar(100),
+StockQuantity decimal(10,2),
+Price int,
+CategoryID int 
+foreign key (CategoryID) references Categories(CategoryID)
+)
+
+create table Orders(
+OrderID uniqueidentifier primary key, 
+UserID int,
+ProductID int,
+OrderDate date,
+Quantity int
+foreign key (UserID)  references Users(UserID),
+foreign key (ProductID) references Products(ProductID)
+)
