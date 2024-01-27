@@ -1,0 +1,15 @@
+-----orders tablosuna yeni bir kayıt eklendiğinde, ilgili ürünün stok miktarını azaltan bir trigger 
+create trigger trg_UpdateStockOnOrder
+on Orders
+after insert
+as
+begin
+    declare @ProductID int, @Quantity int;
+
+    select @ProductID = I.ProductID, @Quantity = I.Quantity
+    from Inserted I;
+
+    update Products
+    set StockQuantity = StockQuantity - @Quantity
+    where ProductID = @ProductID;
+end;
